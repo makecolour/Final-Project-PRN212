@@ -1,0 +1,58 @@
+﻿<Page x:Class="Question2.Page7"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Question2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page7">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="8*"/>
+
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0" Name="SubPageFrame"/>
+
+        <HeaderedContentControl Grid.Row="1" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="DarkRed" Content="Create Report"/>
+
+        <Grid Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <!-- For the first DatePicker -->
+                <ColumnDefinition Width="Auto"/>
+                <!-- For the TextBlock -->
+                <ColumnDefinition Width="Auto"/>
+                <!-- For the second DatePicker -->
+            </Grid.ColumnDefinitions>
+            <DatePicker Grid.Column="0" VerticalAlignment="Center" Height="Auto" FontSize="15" Name="dpStart" CalendarClosed="DpStart_OnCalendarClosed"></DatePicker>
+            <Button Grid.Column="1" Click="ButtonBase_OnClickReset" VerticalAlignment="Top" Margin="5,0,5,0" FontSize="15" Width="100" Height="30">Refresh</Button>
+            <!-- Added Margin for spacing -->
+            <DatePicker Grid.Column="2" VerticalAlignment="Center" Height="Auto" FontSize="15" Name="dpEnd" CalendarClosed="DpStart_OnCalendarClosed"></DatePicker>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <DataGrid  Name="Reservation" CanUserAddRows="False" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" AllowDrop="False" MouseDoubleClick="Reservation_OnMouseDoubleClick">
+                <DataGrid.Resources>
+                    <Style TargetType="Hyperlink">
+                        <EventSetter Event="Click" Handler="Hyperlink_Click"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridHyperlinkColumn Header="Reservation ID" Binding="{Binding BookingReservationId}" Width="0.5*"/>
+                    <DataGridTextColumn Header="Room Number" Binding="{Binding Room.RoomNumber}" Width="0.5*"/>
+                    <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingReservation.BookingDate}" Width="*"/>
+                    <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}" Width="*"></DataGridTextColumn>
+                    <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}" Width="*"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Actual Price" Binding="{Binding ActualPrice}" Width="0.5*"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Customer" Binding="{Binding BookingReservation.Customer.CustomerFullName}" Width="*"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+    </Grid>
+</Page>

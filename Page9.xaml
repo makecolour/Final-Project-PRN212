@@ -1,0 +1,39 @@
+﻿<Page x:Class="Question2.Page9"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Question2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page9">
+
+    <Grid>
+        <Grid.RowDefinitions>
+    <RowDefinition Height="*"></RowDefinition>
+    <RowDefinition Height="Auto"/>
+
+    <RowDefinition Height="8*"/>
+
+</Grid.RowDefinitions>
+<Frame Grid.Row="0" Name="SubPageFrame"/>
+
+<HeaderedContentControl Grid.Row="1" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Foreground="DarkRed" Content="Manage Booking Reservation"/>
+<Grid Grid.Row="2">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="3*"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
+    <DataGrid  Name="Reservation" CanUserAddRows="False" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" AllowDrop="False" MouseDoubleClick="Reservation_OnMouseDoubleClick">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="ID" Binding="{Binding BookingReservationId}" Width="*"/>
+            <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate}" Width="2*"/>
+            <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice}" Width="2*"/>
+            <DataGridTextColumn Header="Customer" Binding="{Binding Customer.CustomerFullName}" Width="3*"/>
+            <DataGridCheckBoxColumn Header="Booking Status" Width="1.5*" Binding="{Binding BookingStatus}"></DataGridCheckBoxColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+   
+</Grid>
+    </Grid>
+</Page>

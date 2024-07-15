@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Page1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page10.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page11.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page12.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page6.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page7.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page8.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page9.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page10.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page11.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page12.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page5.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page6.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page7.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page8.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page9.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

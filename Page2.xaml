@@ -1,0 +1,18 @@
+﻿<Page x:Class="Question2.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Question2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2" FontSize="30">
+
+        <Menu VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="Menu">
+        <MenuItem Header="Manage Customer" FontWeight="{Binding mngCustomer}" Click="ManageCustomer_Click" VerticalAlignment="Center" IsChecked="{Binding mngCustomers}"/>
+        <MenuItem Header="Manage Room" FontWeight="{Binding mngRoom}" Click="ManageRoom_Click" VerticalAlignment="Center" IsChecked="{Binding mngRooms}"/>
+        <MenuItem Header="Manage Booking Reservation" FontWeight="{Binding mngBooking}" Click="ManageBooking_Click" VerticalAlignment="Center" IsChecked="{Binding mngBookings}"/>
+        <MenuItem Header="Create Report" FontWeight="{Binding mngReport}" Click="MenuItem_OnClick" VerticalAlignment="Center" IsChecked="{Binding mngReports}"/>
+        <MenuItem Header="Logout" VerticalAlignment="Center" Click="MenuItem_OnClickLogout"></MenuItem>
+</Menu>
+</Page>
