@@ -57,11 +57,11 @@ namespace Question2
                    deactive.IsChecked = false;
                    active.IsChecked = true;
                }
-                else
-                {
-                    deactive.IsChecked = true;
-                    active.IsChecked = false;
-                }
+               else
+               {
+                   deactive.IsChecked = true;
+                   active.IsChecked = false;
+               }
            }
         }
 
@@ -83,14 +83,14 @@ namespace Question2
             {
                 int id = int.Parse(txtId.Text);
                 var list = context.Customers.Where(x => x.CustomerId == id).ToList();
-                if (listEmail.Count > 0)
-                {
-                    MessageBox.Show("Input another email!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
+                
                 if (list.Count <= 0)
                 {
-                    
+                    if (listEmail.Count > 0)
+                    {
+                        MessageBox.Show("Input another email!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
                     var customer = new Customer()
                     {
                         CustomerFullName = txtName.Text,

@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project;
 
 namespace Question2
 {
@@ -67,6 +68,18 @@ namespace Question2
             {
                 MessageBox.Show("Please enter both email and password.");
             }
+        }
+
+        private void ButtonBase_OnClickRegister(object sender, RoutedEventArgs e)
+        {
+            Window popupWindow = new Window
+            {
+                Title = "Pop up",
+                Content = new Page13(), // Set the content to Page6
+                SizeToContent = SizeToContent.WidthAndHeight, // Size window to content
+                ResizeMode = ResizeMode.CanResizeWithGrip // Optional: Prevent resizing
+            };
+            popupWindow.Show();
         }
     }
 }

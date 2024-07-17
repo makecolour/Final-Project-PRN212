@@ -19,6 +19,9 @@
     <Compile Update="Page12.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Page13.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Page2.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -58,6 +61,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page12.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page13.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page2.xaml">

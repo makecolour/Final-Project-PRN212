@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.DateTime;
 
 namespace Question2
 {
@@ -59,7 +60,7 @@ namespace Question2
                 txtPrice.Text = customer.TotalPrice.ToString();
                 txtId.Text = customer.BookingReservationId.ToString();
                 cbCustomer.SelectedItem = customer.Customer;
-                dpBooking.SelectedDate = DateTime.Parse(customer.BookingDate.ToString());
+                dpBooking.SelectedDate = Parse(customer.BookingDate.ToString());
                 var status = customer.BookingStatus;
                 if (status == 1)
                 {
@@ -86,7 +87,8 @@ namespace Question2
 
         private void ButtonBase_OnClickAdd(object sender, RoutedEventArgs e)
         {
-            if(!string.IsNullOrWhiteSpace(txtId.Text))
+            var lastBookingId = context.BookingReservations.OrderBy(r => r.BookingReservationId).LastOrDefault()?.BookingReservationId ?? 0;
+            if (!string.IsNullOrWhiteSpace(txtId.Text))
             {
                 int id = int.Parse(txtId.Text);
                 var reservation = context.BookingReservations.FirstOrDefault(x => x.BookingReservationId == id);
@@ -94,7 +96,8 @@ namespace Question2
                 {
                     var booking = new BookingReservation()
                     {
-                        BookingDate = DateOnly.FromDateTime(DateTime.Today),
+                        BookingReservationId = lastBookingId + 1,
+                        BookingDate = DateOnly.FromDateTime(Today),
                         Customer = cbCustomer.SelectedItem as Customer,
                         BookingStatus = active.IsChecked == true ? (byte)1 : (byte)0,
                         BookingDetails = new List<BookingDetail>(),
@@ -109,10 +112,11 @@ namespace Question2
                     var result = MessageBox.Show("Do you want to update this booking reservation?", "Update Booking BookingDetails", MessageBoxButton.YesNo);
                     if (result == MessageBoxResult.Yes)
                     {
+                        reservation.BookingReservationId = lastBookingId+1;
                         reservation.BookingStatus = active.IsChecked == true ? (byte)1 : (byte)0;
                         reservation.Customer = cbCustomer.SelectedItem as Customer;
                         reservation.BookingDate = DateOnly.FromDateTime(dpBooking.SelectedDate.GetValueOrDefault());
-                        reservation.CustomerId = cbCustomer.SelectedItem as Customer != null ? (cbCustomer.SelectedItem as Customer).CustomerId : 0;
+                        reservation.CustomerId = cbCustomer.SelectedItem != null && (Customer)cbCustomer.SelectedItem != null ? (cbCustomer.SelectedItem as Customer).CustomerId : 0;
                         context.Update(reservation);
                         context.SaveChanges();
                         Load();
@@ -123,12 +127,13 @@ namespace Question2
             {
                 var booking = new BookingReservation()
                 {
-                    BookingDate = DateOnly.FromDateTime(DateTime.Today),
+                    BookingReservationId = lastBookingId + 1,
+                    BookingDate = DateOnly.FromDateTime(Today),
                     Customer = cbCustomer.SelectedItem as Customer,
                     BookingStatus = active.IsChecked == true ? (byte)1 : (byte)0,
                     CustomerId = cbCustomer.SelectedItem as Customer != null ? (cbCustomer.SelectedItem as Customer).CustomerId : 0
                 };
-                context.BookingReservations.Add(booking);
+                context.Add(booking);
                 context.SaveChanges();
                 Load();
             }
@@ -139,7 +144,7 @@ namespace Question2
             if(!string.IsNullOrWhiteSpace(txtId.Text))
             {
                 int id = int.Parse(txtId.Text);
-                var reservation = context.BookingReservations.FirstOrDefault(x => x.BookingReservationId == id);
+                var reservation = context.BookingReservations.Find(id);
                 if(reservation != null)
                 {
                     var result = MessageBox.Show("Do you want to delete this booking reservation?", "Delete Booking BookingDetails", MessageBoxButton.YesNo);

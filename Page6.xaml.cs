@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project;
 using Microsoft.EntityFrameworkCore;
 
 namespace Question2
@@ -24,6 +25,7 @@ namespace Question2
     {
         private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
         private BookingReservation bookingReservation;
+        private Input input = new Input();
         public Page6(BookingReservation bookingReservation)
         {
             InitializeComponent();
@@ -67,12 +69,22 @@ namespace Question2
             { 
                 DateOnly startDate = DateOnly.FromDateTime(dpStart.SelectedDate.Value);
                 DateOnly endDate = DateOnly.FromDateTime(dpEnd.SelectedDate.Value);
-                if(startDate > endDate)
+                if(!input.isDateValid(startDate, endDate))
                 {
                     MessageBox.Show("Start date must be less than end date", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-                
+                else if(input.isDateAfterToday(startDate))
+                {
+                    MessageBox.Show("End date must be less than today", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+                else if(input.isDateOverlap(startDate,endDate))
+                {
+                    MessageBox.Show("Cannot book this date", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
                 var room = txtId.SelectedItem as RoomInformation;
                 var booking = context.BookingDetails.FirstOrDefault(x => x.Room==room&&x.BookingReservationId==bookingReservation.BookingReservationId);
 

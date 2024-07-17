@@ -61,7 +61,7 @@ namespace Question2 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Main Project;V1.0.0.0;component/page2.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Main Project;component/page2.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Page2.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

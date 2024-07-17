@@ -33,8 +33,17 @@
                     <PasswordBox Grid.Column="1" Margin="10 20" Name="password" Height="30"></PasswordBox>
                 </Grid>
                 <Grid Grid.Row="4">
-                    <Button Click="ButtonBase_OnClick" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Width="100">Login</Button>
-                </Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid HorizontalAlignment="Right">
+                        <Button Click="ButtonBase_OnClick" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="200" Margin="30">Login</Button>
+                    </Grid>
+                    <Grid Grid.Column="1" HorizontalAlignment="Left">
+                        <Button Click="ButtonBase_OnClickRegister" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="200" Margin="30">Register</Button>
+                    </Grid>
+        </Grid>
             </Grid>
 
 </Page>
