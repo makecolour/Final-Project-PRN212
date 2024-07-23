@@ -1,4 +1,4 @@
-﻿using Question2.Models;
+﻿using Question2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project.Models;
 
 namespace Question2
 {
@@ -24,7 +25,6 @@ namespace Question2
     public partial class Page3 : Page
     {
 
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
         public Page3()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace Question2
         private void Load()
         {
             
-            var list = context.Customers.OrderByDescending(x => x.CustomerStatus).ToList();
+            var list = MainWindow.INSTANCE.context.Customers.OrderByDescending(x => x.CustomerStatus).ToList();
             Customers.ItemsSource = list;
         }
 
@@ -78,11 +78,11 @@ namespace Question2
 
         private void ButtonBase_OnClickAdd(object sender, RoutedEventArgs e)
         {
-            var listEmail = context.Customers.Where(x => x.EmailAddress == txtEmail.Text).ToList();
+            var listEmail = MainWindow.INSTANCE.context.Customers.Where(x => x.EmailAddress == txtEmail.Text).ToList();
             if (!string.IsNullOrWhiteSpace(txtId.Text)&&!string.IsNullOrWhiteSpace(txtEmail.Text))
             {
                 int id = int.Parse(txtId.Text);
-                var list = context.Customers.Where(x => x.CustomerId == id).ToList();
+                var list = MainWindow.INSTANCE.context.Customers.Where(x => x.CustomerId == id).ToList();
                 
                 if (list.Count <= 0)
                 {
@@ -100,8 +100,8 @@ namespace Question2
                         CustomerStatus = active.IsChecked == true ? (byte)1 : (byte)0,
                         BookingReservations = new List<BookingReservation>()
                     };
-                    context.Customers.Add(customer);
-                    context.SaveChanges();
+                    MainWindow.INSTANCE.context.Customers.Add(customer);
+                    MainWindow.INSTANCE.context.SaveChanges();
                     Load();
                     return;
                 }
@@ -117,8 +117,8 @@ namespace Question2
                         customer.EmailAddress = txtEmail.Text;
                         customer.CustomerBirthday = DateOnly.Parse(dpDob.Text);
                         customer.CustomerStatus = active.IsChecked == true ? (byte)1 : (byte)0;
-                        context.Customers.Update(customer);
-                        context.SaveChanges();
+                        MainWindow.INSTANCE.context.Customers.Update(customer);
+                        MainWindow.INSTANCE.context.SaveChanges();
                         Load();
                         return;
                     }
@@ -145,8 +145,8 @@ namespace Question2
                     CustomerStatus = active.IsChecked == true ? (byte)1 : (byte)0,
                     BookingReservations = new List<BookingReservation>()
                 };
-                context.Customers.Add(customer);
-                context.SaveChanges();
+                MainWindow.INSTANCE.context.Customers.Add(customer);
+                MainWindow.INSTANCE.context.SaveChanges();
                 Load();
                 return;
             }
@@ -158,16 +158,42 @@ namespace Question2
             if (!string.IsNullOrWhiteSpace(txtId.Text))
             {
                 int id = int.Parse(txtId.Text);
-                var list = context.Customers.Where(x => x.CustomerId == id).ToList();
+                var list = MainWindow.INSTANCE.context.Customers.Where(x => x.CustomerId == id).ToList();
                 if (list.Count <= 0)
                 {
                    MessageBox.Show("Customer does not exist!");
                 }
                 else
                 {
-                    Customer customer = context.Customers.Find(id);
+                    Customer customer = MainWindow.INSTANCE.context.Customers.Find(id);
                     customer.CustomerStatus = 0;
-                    context.SaveChanges();
+                    MainWindow.INSTANCE.context.SaveChanges();
+                    Load();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Customer ID cannot be blank!");
+                return;
+            }
+        }
+
+        private void ButtonBase_OnClickPass(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                int id = int.Parse(txtId.Text);
+                var list = MainWindow.INSTANCE.context.Customers.Where(x => x.CustomerId == id).ToList();
+                if (list.Count <= 0)
+                {
+                    MessageBox.Show("Customer does not exist!");
+                }
+                else
+                {
+                    Customer customer = MainWindow.INSTANCE.context.Customers.Find(id);
+                    customer.Password = BCrypt.Net.BCrypt.HashPassword(MainWindow.INSTANCE.configuration["default_password"]);
+                    MainWindow.INSTANCE.context.SaveChanges();
                     Load();
                 }
 

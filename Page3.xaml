@@ -78,7 +78,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Button Margin="5" Grid.Column="0" Height="30" Click="ButtonBase_OnClickAdd">Edit</Button>
+                    <Button Margin="5" Grid.Column="0" Height="30" Click="ButtonBase_OnClickPass">Reset Password</Button>
                     <Button Margin="5" Grid.Column="1" Height="30" Click="ButtonBase_OnClickDel">Delete</Button>
                 </Grid>
             </StackPanel>

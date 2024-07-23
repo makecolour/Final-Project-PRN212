@@ -331,3 +331,12 @@ C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Main Projec
 C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\ref\Main Project.dll
 C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Page13.g.cs
 C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Page13.baml
+C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Page14.g.cs
+C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Page14.baml
+C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Page15.g.cs
+C:\Users\quyen\Desktop\Final Project PRN212\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Page15.baml
+C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Page16.g.cs
+C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Page16.baml
+C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Popup.g.cs
+C:\Users\quyen\Desktop\Final Project PRN212\obj\Debug\net8.0-windows\Popup.baml

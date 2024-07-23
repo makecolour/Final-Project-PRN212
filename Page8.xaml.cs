@@ -81,7 +81,7 @@ namespace Question2
 
         private void ManageReservation_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.INSTANCE.MainFrame.Navigate(new Page9());
+            MainWindow.INSTANCE.MainFrame.Navigate(new Page5());
         }
 
         private void MenuItem_OnClickLogout(object sender, RoutedEventArgs e)

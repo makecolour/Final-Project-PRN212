@@ -1,4 +1,4 @@
-﻿using Question2.Models;
+﻿using Question2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project;
+using Main_Project.Models;
 
 namespace Question2
 {
@@ -21,8 +23,8 @@ namespace Question2
     /// </summary>
     public partial class Page11 : Page
     {
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
-        private Customer customer = MainWindow.INSTANCE._customer;
+        private readonly Customer customer = MainWindow.INSTANCE._customer;
+        private readonly Input input = new Input();
         public Page11()
         {
             InitializeComponent();
@@ -57,6 +59,18 @@ namespace Question2
                 MessageBox.Show("Please fill all the fields", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+            if(!input.isEmailValid(txtEmail.Text))
+            {
+                return;
+            }
+            if(!input.isValidPhoneNumber(txtTelephone.Text))
+            {
+                return;
+            }
+            if (!input.isDateAfterToday(DateOnly.FromDateTime(dpDob.SelectedDate.Value)))
+            {
+                return;
+            }
             var result = MessageBox.Show("Customer is already exist. Do you want to proceed?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
             {
@@ -65,8 +79,8 @@ namespace Question2
                 customer.EmailAddress = txtEmail.Text;
                 customer.CustomerBirthday = DateOnly.Parse(dpDob.Text);
                 customer.CustomerStatus = active.IsChecked == true ? (byte)1 : (byte)0;
-                context.Customers.Update(customer);
-                context.SaveChanges();
+                MainWindow.INSTANCE.context.Customers.Update(customer);
+                MainWindow.INSTANCE.context.SaveChanges();
                 Load();
                 return;
             }
@@ -79,7 +93,7 @@ namespace Question2
 
         private void ButtonBase_OnClickPass(object sender, RoutedEventArgs e)
         {
-            Window popupWindow = new Window
+            Window popupWindow = new Popup()
             {
                 Title = "Pop up",
                 Content = new Page12(), // Set the content to Page6

@@ -36,12 +36,16 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Grid HorizontalAlignment="Right">
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" HorizontalAlignment="Right">
                         <Button Click="ButtonBase_OnClick" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="200" Margin="30">Login</Button>
                     </Grid>
-                    <Grid Grid.Column="1" HorizontalAlignment="Left">
+                    <Grid  HorizontalAlignment="Left">
                         <Button Click="ButtonBase_OnClickRegister" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="200" Margin="30">Register</Button>
+                    </Grid>
+                    <Grid  Grid.Column="2" HorizontalAlignment="Left">
+                        <Button Click="ButtonBase_OnClickForget" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="200" Margin="30">Forget Password</Button>
                     </Grid>
         </Grid>
             </Grid>

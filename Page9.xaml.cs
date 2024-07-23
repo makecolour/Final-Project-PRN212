@@ -1,4 +1,4 @@
-﻿using Question2.Models;
+﻿using Question2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project;
+using Main_Project.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Question2
@@ -22,8 +24,6 @@ namespace Question2
     /// </summary>
     public partial class Page9 : Page
     {
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
-
         public Page9()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace Question2
 
         private void Load()
         {
-            var list = context.BookingReservations.Where(x=> x.Customer.CustomerId==MainWindow.INSTANCE._customer.CustomerId).Include(x => x.Customer).ToList();
+            var list = MainWindow.INSTANCE.context.BookingReservations.Where(x=> x.Customer.CustomerId==MainWindow.INSTANCE._customer.CustomerId).Include(x => x.Customer).ToList();
             Reservation.ItemsSource = list;
         }
 
@@ -43,7 +43,7 @@ namespace Question2
             if (item != null)
             {
                 var reservation = item as BookingReservation;
-                Window popupWindow = new Window
+                Window popupWindow = new Popup()
                 {
                     Title = "Pop up",
                     Content = new Page10(reservation), // Set the content to Page6

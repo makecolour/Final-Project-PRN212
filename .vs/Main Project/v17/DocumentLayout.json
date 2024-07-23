@@ -1,0 +1,703 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page7.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page7.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page7.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page7.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page9.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page9.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page8.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page8.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page16.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page16.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page15.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page15.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page14.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page14.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page13.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page13.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page12.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page12.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page11.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page11.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page10.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page10.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\popup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:popup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page8.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page8.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page9.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page9.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page10.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page10.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page12.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page12.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page14.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page14.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page13.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page13.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page11.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page11.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page15.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page15.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\popup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:popup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\page16.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:page16.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\models\\fuminihotelmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:models\\fuminihotelmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|c:\\users\\quyen\\desktop\\final project prn212\\models\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78533C7D-DDA4-4C3D-9ACD-69DCA1A12910}|Main Project.csproj|solutionrelative:models\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 39,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Page5.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page5.xaml",
+              "RelativeDocumentMoniker": "Page5.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page5.xaml",
+              "RelativeToolTip": "Page5.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T23:43:15.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Page9.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page9.xaml",
+              "RelativeDocumentMoniker": "Page9.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page9.xaml",
+              "RelativeToolTip": "Page9.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T21:45:25.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Page8.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page8.xaml",
+              "RelativeDocumentMoniker": "Page8.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page8.xaml",
+              "RelativeToolTip": "Page8.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T21:45:17.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Page10.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page10.xaml",
+              "RelativeDocumentMoniker": "Page10.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page10.xaml",
+              "RelativeToolTip": "Page10.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T21:39:46.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Popup.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Popup.xaml.cs",
+              "RelativeDocumentMoniker": "Popup.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Popup.xaml.cs",
+              "RelativeToolTip": "Popup.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T21:36:37.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Popup.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Popup.xaml",
+              "RelativeDocumentMoniker": "Popup.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Popup.xaml",
+              "RelativeToolTip": "Popup.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T21:36:31.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Page16.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page16.xaml.cs",
+              "RelativeDocumentMoniker": "Page16.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page16.xaml.cs",
+              "RelativeToolTip": "Page16.xaml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T21:08:02.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Page16.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page16.xaml",
+              "RelativeDocumentMoniker": "Page16.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page16.xaml",
+              "RelativeToolTip": "Page16.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T21:06:57.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Page3.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page3.xaml",
+              "RelativeDocumentMoniker": "Page3.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page3.xaml",
+              "RelativeToolTip": "Page3.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T20:45:46.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Page2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page2.xaml.cs",
+              "RelativeDocumentMoniker": "Page2.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page2.xaml.cs",
+              "RelativeToolTip": "Page2.xaml.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAADwv7EAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T20:45:36.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Page15.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page15.xaml.cs",
+              "RelativeDocumentMoniker": "Page15.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page15.xaml.cs",
+              "RelativeToolTip": "Page15.xaml.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwEgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T20:32:18.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Page15.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page15.xaml",
+              "RelativeDocumentMoniker": "Page15.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page15.xaml",
+              "RelativeToolTip": "Page15.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T20:20:41.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Page8.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page8.xaml.cs",
+              "RelativeDocumentMoniker": "Page8.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page8.xaml.cs",
+              "RelativeToolTip": "Page8.xaml.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAuwFMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T20:07:42.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Page14.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page14.xaml.cs",
+              "RelativeDocumentMoniker": "Page14.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page14.xaml.cs",
+              "RelativeToolTip": "Page14.xaml.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAuwDgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:15:35.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Page14.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page14.xaml",
+              "RelativeDocumentMoniker": "Page14.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page14.xaml",
+              "RelativeToolTip": "Page14.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T19:05:28.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Page7.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page7.xaml.cs",
+              "RelativeDocumentMoniker": "Page7.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page7.xaml.cs",
+              "RelativeToolTip": "Page7.xaml.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAcwFQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:03:56.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Page9.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page9.xaml.cs",
+              "RelativeDocumentMoniker": "Page9.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page9.xaml.cs",
+              "RelativeToolTip": "Page9.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAD4vx0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:03:49.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Page5.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page5.xaml.cs",
+              "RelativeDocumentMoniker": "Page5.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page5.xaml.cs",
+              "RelativeToolTip": "Page5.xaml.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAmwJAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:03:38.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Page4.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page4.xaml.cs",
+              "RelativeDocumentMoniker": "Page4.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page4.xaml.cs",
+              "RelativeToolTip": "Page4.xaml.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAswBoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:03:27.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Page3.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page3.xaml.cs",
+              "RelativeDocumentMoniker": "Page3.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page3.xaml.cs",
+              "RelativeToolTip": "Page3.xaml.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAuwFEAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:03:14.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "FuminiHotelManagementContext.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Models\\FuminiHotelManagementContext.cs",
+              "RelativeDocumentMoniker": "Models\\FuminiHotelManagementContext.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Models\\FuminiHotelManagementContext.cs",
+              "RelativeToolTip": "Models\\FuminiHotelManagementContext.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAqwFgAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T18:48:48.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAYwDYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T13:37:04.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T13:21:03.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-22T13:14:14.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\EmailService.cs",
+              "RelativeDocumentMoniker": "EmailService.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\EmailService.cs",
+              "RelativeToolTip": "EmailService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAswBgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T12:40:43.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Page1.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page1.xaml",
+              "RelativeDocumentMoniker": "Page1.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page1.xaml",
+              "RelativeToolTip": "Page1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T11:22:40.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Page2.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page2.xaml",
+              "RelativeDocumentMoniker": "Page2.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page2.xaml",
+              "RelativeToolTip": "Page2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-22T11:22:24.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Page13.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page13.xaml.cs",
+              "RelativeDocumentMoniker": "Page13.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page13.xaml.cs",
+              "RelativeToolTip": "Page13.xaml.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAgwEEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T07:32:32.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Page13.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page13.xaml",
+              "RelativeDocumentMoniker": "Page13.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page13.xaml",
+              "RelativeToolTip": "Page13.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T12:37:58.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Page12.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page12.xaml",
+              "RelativeDocumentMoniker": "Page12.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page12.xaml",
+              "RelativeToolTip": "Page12.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T12:37:50.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Page12.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page12.xaml.cs",
+              "RelativeDocumentMoniker": "Page12.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page12.xaml.cs",
+              "RelativeToolTip": "Page12.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T12:21:51.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Page11.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page11.xaml.cs",
+              "RelativeDocumentMoniker": "Page11.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page11.xaml.cs",
+              "RelativeToolTip": "Page11.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowF8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T12:21:17.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Page11.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page11.xaml",
+              "RelativeDocumentMoniker": "Page11.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page11.xaml",
+              "RelativeToolTip": "Page11.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T12:21:13.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Page10.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page10.xaml.cs",
+              "RelativeDocumentMoniker": "Page10.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page10.xaml.cs",
+              "RelativeToolTip": "Page10.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T12:21:03.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Page1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page1.xaml.cs",
+              "RelativeDocumentMoniker": "Page1.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page1.xaml.cs",
+              "RelativeToolTip": "Page1.xaml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwD4AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T12:20:53.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Page6.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page6.xaml.cs",
+              "RelativeDocumentMoniker": "Page6.xaml.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page6.xaml.cs",
+              "RelativeToolTip": "Page6.xaml.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAmwFEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T12:08:41.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Page6.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page6.xaml",
+              "RelativeDocumentMoniker": "Page6.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page6.xaml",
+              "RelativeToolTip": "Page6.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T12:08:37.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Page7.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page7.xaml",
+              "RelativeDocumentMoniker": "Page7.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Page7.xaml",
+              "RelativeToolTip": "Page7.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T12:08:32.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Input.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Input.cs",
+              "RelativeDocumentMoniker": "Input.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Input.cs",
+              "RelativeToolTip": "Input.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAawDcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T12:07:27.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RoomInformation.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Models\\RoomInformation.cs",
+              "RelativeDocumentMoniker": "Models\\RoomInformation.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Models\\RoomInformation.cs",
+              "RelativeToolTip": "Models\\RoomInformation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T12:06:41.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T11:49:11.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\quyen\\Desktop\\Final Project PRN212\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T11:49:02.006Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

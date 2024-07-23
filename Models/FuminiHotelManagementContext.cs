@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace Question2.Models;
+namespace Main_Project.Models;
 
 public partial class FuminiHotelManagementContext : DbContext
 {
+
     public static FuminiHotelManagementContext INSTANCE = new FuminiHotelManagementContext();
+    
     public FuminiHotelManagementContext()
     {
-        if(INSTANCE== null)
+        if(INSTANCE == null)
         {
             INSTANCE = this;
-        }
-        else
-        {
-            throw new Exception("Cannot create another instance of this class");
         }
     }
 
@@ -37,7 +35,6 @@ public partial class FuminiHotelManagementContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-
         var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
         if (!optionsBuilder.IsConfigured) { optionsBuilder.UseSqlServer(config.GetConnectionString("value")); }
     }
@@ -81,12 +78,15 @@ public partial class FuminiHotelManagementContext : DbContext
         {
             entity.ToTable("Customer");
 
-            entity.HasIndex(e => e.EmailAddress, "UQ__Customer__49A1474041B7054D").IsUnique();
+            entity.HasIndex(e => e.EmailAddress, "UQ__Customer__49A147406DE9798A").IsUnique();
 
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
+            entity.Property(e => e.Code)
+                .HasMaxLength(6)
+                .IsFixedLength();
             entity.Property(e => e.CustomerFullName).HasMaxLength(50);
             entity.Property(e => e.EmailAddress).HasMaxLength(50);
-            entity.Property(e => e.Password).HasMaxLength(50);
+            entity.Property(e => e.Password).HasMaxLength(255);
             entity.Property(e => e.Telephone).HasMaxLength(12);
         });
 

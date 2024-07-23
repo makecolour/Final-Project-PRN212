@@ -21,7 +21,6 @@ namespace Question2
     /// </summary>
     public partial class Page2 : Page
     {
-
         private event PropertyChangedEventHandler PropertyChanged;
         private FontWeight _mngCustomer = FontWeights.Normal;
         private FontWeight _mngRoom = FontWeights.Normal;

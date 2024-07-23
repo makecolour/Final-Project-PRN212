@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Question2.Models;
+using Question2;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,6 +16,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Main_Project;
+using Main_Project.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Question2
 {
@@ -24,45 +26,43 @@ namespace Question2
     /// </summary>
     public partial class Page1 : Page
     {
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
-        private IConfigurationRoot configuration;
        
         public Page1()
         {
             InitializeComponent();
-            LoadAppSettings();
+            MainWindow.INSTANCE.isAdmin = false;
         }
-        private void LoadAppSettings()
-        {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-
-            configuration = builder.Build();
-        }
+        
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            String email = this.email.Text;
-            String password = this.password.Password;
-            var adminEmail = configuration["Admin:email"];
-            var adminPassword = configuration["Admin:password"];
+            string email = this.email.Text;
+            string password = this.password.Password;
+            var adminEmail = MainWindow.INSTANCE.configuration["Admin:email"];
+            var adminPassword = MainWindow.INSTANCE.configuration["Admin:password"];
             if (!string.IsNullOrWhiteSpace(email) && !string.IsNullOrWhiteSpace(password))
             {
                 if (email == adminEmail && password == adminPassword)
                 {
+                    MainWindow.INSTANCE.isAdmin = true;
                     NavigationService.Navigate(new Page3());
                     MessageBox.Show("Admin login successful!");
                 }
-                else if (context.Customers.FirstOrDefault(x => x.EmailAddress == email && x.Password == password && x.CustomerStatus==1) != null)
-                {
-                    MainWindow.INSTANCE._customer = context.Customers.FirstOrDefault(x => x.EmailAddress == email && x.Password == password);
-                    NavigationService.Navigate(new Page9());
-                    MessageBox.Show("Customer login successful!");
-                }
                 else
                 {
+                    MainWindow.INSTANCE.isAdmin = false;
+                    foreach (var customer in MainWindow.INSTANCE.context.Customers.ToList())
+                    {
+                        if (BCrypt.Net.BCrypt.Verify(password, customer.Password)&&customer.CustomerStatus==1&&customer.EmailAddress==email)
+                        {
+                            MainWindow.INSTANCE._customer = customer;
+                            NavigationService.Navigate(new Page9());
+                            MessageBox.Show("Customer login successful!");
+                            return;
+                        }
+                    }
                     MessageBox.Show("Invalid email or password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
+                
             }
             else
             {
@@ -72,10 +72,22 @@ namespace Question2
 
         private void ButtonBase_OnClickRegister(object sender, RoutedEventArgs e)
         {
-            Window popupWindow = new Window
+            Window popupWindow = new Popup()
             {
                 Title = "Pop up",
                 Content = new Page13(), // Set the content to Page6
+                SizeToContent = SizeToContent.WidthAndHeight, // Size window to content
+                ResizeMode = ResizeMode.CanResizeWithGrip // Optional: Prevent resizing
+            };
+            popupWindow.Show();
+        }
+
+        private void ButtonBase_OnClickForget(object sender, RoutedEventArgs e)
+        {
+            Window popupWindow = new Popup()
+            {
+                Title = "Pop up",
+                Content = new Page15(), // Set the content to Page6
                 SizeToContent = SizeToContent.WidthAndHeight, // Size window to content
                 ResizeMode = ResizeMode.CanResizeWithGrip // Optional: Prevent resizing
             };

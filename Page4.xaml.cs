@@ -1,4 +1,4 @@
-﻿using Question2.Models;
+﻿using Question2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Question2
@@ -23,7 +24,7 @@ namespace Question2
     /// </summary>
     public partial class Page4 : Page
     {
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
+        
         public Page4()
         {
             InitializeComponent();
@@ -33,9 +34,9 @@ namespace Question2
 
         private void Load()
         {
-            var list = context.RoomInformations.OrderByDescending(x => x.RoomStatus).Include(x=>x.RoomType).ToList();
+            var list = MainWindow.INSTANCE.context.RoomInformations.OrderByDescending(x => x.RoomStatus).Include(x=>x.RoomType).ToList();
             Rooms.ItemsSource = list;
-            cbRoomType.ItemsSource = context.RoomTypes.ToList();
+            cbRoomType.ItemsSource = MainWindow.INSTANCE.context.RoomTypes.ToList();
             cbRoomType.DisplayMemberPath = "RoomTypeName";
         }
 
@@ -89,7 +90,7 @@ namespace Question2
 
         private void ButtonBase_OnClickAdd(object sender, RoutedEventArgs e)
         {
-            var listNumber = context.RoomInformations.Where(x => x.RoomNumber == txtNumber.Text).ToList();
+            var listNumber = MainWindow.INSTANCE.context.RoomInformations.Where(x => x.RoomNumber == txtNumber.Text).ToList();
             if (string.IsNullOrWhiteSpace(txtPrice.Text) || string.IsNullOrWhiteSpace(txtNumber.Text) ||
                 string.IsNullOrWhiteSpace(txtMaxCapacity.Text) || cbRoomType.SelectedItem == null || !Regex.IsMatch(txtMaxCapacity.Text, @"^\d+$"))
             {
@@ -99,7 +100,7 @@ namespace Question2
             if (!string.IsNullOrWhiteSpace(txtId.Text))
             {
                 int id = int.Parse(txtId.Text);
-                var list = context.RoomInformations.Where(x => x.RoomId == id).ToList();
+                var list = MainWindow.INSTANCE.context.RoomInformations.Where(x => x.RoomId == id).ToList();
                 if (listNumber.Count > 0)
                 {
                     MessageBox.Show("Room number already exists", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -118,8 +119,8 @@ namespace Question2
                         RoomPricePerDay = decimal.Parse(txtPrice.Text),
                         RoomType = cbRoomType.SelectedItem as RoomType
                     };
-                    context.RoomInformations.Add(room);
-                    context.SaveChanges();
+                    MainWindow.INSTANCE.context.RoomInformations.Add(room);
+                    MainWindow.INSTANCE.context.SaveChanges();
                     Load();
                 }
                 else
@@ -139,8 +140,8 @@ namespace Question2
                         room.RoomTypeId = (cbRoomType.SelectedItem as RoomType).RoomTypeId;
                         room.RoomStatus = active.IsChecked == true ? (byte)1 : (byte)0;
                         room.RoomPricePerDay = decimal.Parse(txtPrice.Text); ;
-                        context.RoomInformations.Update(room);
-                        context.SaveChanges();
+                        MainWindow.INSTANCE.context.RoomInformations.Update(room);
+                        MainWindow.INSTANCE.context.SaveChanges();
                         Load();
                     }
                 }
@@ -157,8 +158,8 @@ namespace Question2
                     RoomPricePerDay = decimal.Parse(txtPrice.Text),
                     RoomType = cbRoomType.SelectedItem as RoomType
                 };
-                context.RoomInformations.Add(room);
-                context.SaveChanges();
+                MainWindow.INSTANCE.context.RoomInformations.Add(room);
+                MainWindow.INSTANCE.context.SaveChanges();
                 Load();
             }
         }
@@ -167,25 +168,25 @@ namespace Question2
             if (!string.IsNullOrWhiteSpace(txtId.Text))
             {
                 int id = int.Parse(txtId.Text);
-                var list = context.RoomInformations.Where(x => x.RoomId == id).ToList();
+                var list = MainWindow.INSTANCE.context.RoomInformations.Where(x => x.RoomId == id).ToList();
                 if (list.Count > 0)
                 {
                     var result = MessageBox.Show("Do you want to delete this room?", "Delete Room", MessageBoxButton.YesNo);
                     if (result == MessageBoxResult.Yes)
                     {
                         var room = list.FirstOrDefault();
-                        var booking = context.BookingDetails.Where(x => x.RoomId == room.RoomId).ToList();
+                        var booking = MainWindow.INSTANCE.context.BookingDetails.Where(x => x.RoomId == room.RoomId).ToList();
                         if (booking.Count==0)
                         {
-                            context.RoomInformations.Remove(room);
+                            MainWindow.INSTANCE.context.RoomInformations.Remove(room);
                         }
                         else
                         {
                             room.RoomStatus = 0;
-                            context.RoomInformations.Update(room);
+                            MainWindow.INSTANCE.context.RoomInformations.Update(room);
                         }
 
-                        context.SaveChanges();
+                        MainWindow.INSTANCE.context.SaveChanges();
                         Load();
                     }
                 }

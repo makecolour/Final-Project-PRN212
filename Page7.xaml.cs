@@ -1,4 +1,4 @@
-﻿using Question2.Models;
+﻿using Question2;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project;
+using Main_Project.Models;
 using Microsoft.Win32;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,7 +26,6 @@ namespace Question2
     /// </summary>
     public partial class Page7 : Page
     {
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
         public Page7()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace Question2
         }
         private void Load()
         {
-            Reservation.ItemsSource = context.BookingDetails.Include(x => x.Room).Include(x=> x.BookingReservation).Include(x => x.BookingReservation.Customer).OrderByDescending(x=> x.BookingReservationId).ToList();
+            Reservation.ItemsSource = MainWindow.INSTANCE.context.BookingDetails.Include(x => x.Room).Include(x=> x.BookingReservation).Include(x => x.BookingReservation.Customer).OrderByDescending(x=> x.BookingReservationId).ToList();
         }
 
         private void DpStart_OnCalendarClosed(object sender, RoutedEventArgs e)
@@ -42,7 +43,7 @@ namespace Question2
             var end = dpEnd.SelectedDate;
             if (start != null && end != null)
             {
-                Reservation.ItemsSource = context.BookingDetails
+                Reservation.ItemsSource = MainWindow.INSTANCE.context.BookingDetails
                     .Include(x => x.Room)
                     .Include(x => x.BookingReservation)
                     .Include(x => x.BookingReservation.Customer)
@@ -64,7 +65,7 @@ namespace Question2
             var hyperlink = sender as Hyperlink;
             if (hyperlink != null)
             {
-                // Get the DataContext of the Hyperlink, which should be your data item
+                // Get the DataMainWindow.INSTANCE.context of the Hyperlink, which should be your data item
                 var dataItem = hyperlink.DataContext;
 
                 // Assuming your data item has a property named 'BookingReservationId'
@@ -73,7 +74,7 @@ namespace Question2
                 {
                     var bookingReservationId = propertyInfo.GetValue(dataItem, null);
 
-                    var reservation = context.BookingReservations.FirstOrDefault(x => x.BookingReservationId == (int)bookingReservationId);
+                    var reservation = MainWindow.INSTANCE.context.BookingReservations.FirstOrDefault(x => x.BookingReservationId == (int)bookingReservationId);
                     if(reservation == null)
                     {
                         MessageBox.Show("Reservation not found");
@@ -81,7 +82,7 @@ namespace Question2
                     }
                     // Now that you have the BookingReservationId, you can use it to open Page6
                     // Assuming Page6 has a constructor that accepts a bookingReservationId
-                    Window popupWindow = new Window
+                    Window popupWindow = new Popup()
                     {
                         Title = "Pop up",
                         Content = new Page6(reservation), // Initialize Page6 with the bookingReservationId

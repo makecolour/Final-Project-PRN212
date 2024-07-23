@@ -1,4 +1,4 @@
-﻿using Question2.Models;
+﻿using Question2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,17 +13,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project.Models;
 
 namespace Question2
 {
     /// <summary>
     /// Interaction logic for Page12.xaml
     /// </summary>
-    /// 
+    ///
     public partial class Page12 : Page
     {
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
-        private Customer customer = MainWindow.INSTANCE._customer;
+        private readonly Customer customer = MainWindow.INSTANCE._customer;
         public Page12()
         {
             InitializeComponent();
@@ -33,11 +33,11 @@ namespace Question2
         {
             string oldPassword = txtOldPass.Password;
             string newPassword = txtNewPass.Password;
-            if(oldPassword== customer.Password)
+            if(BCrypt.Net.BCrypt.Verify(oldPassword, customer.Password))
             {
-                customer.Password = newPassword;
-                context.Update(customer);
-                context.SaveChanges();
+                customer.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+                MainWindow.INSTANCE.context.Update(customer);
+                MainWindow.INSTANCE.context.SaveChanges();
                 MessageBox.Show("Password changed successfully!", "Password changed", MessageBoxButton.OK);
             }
             else

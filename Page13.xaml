@@ -30,7 +30,14 @@
             </Grid>
             <Grid Grid.Row="1">
                 <TextBlock Margin="5,0,5,0">Email</TextBlock>
-                <TextBox  Margin="5,15,5,5" Name="txtEmail"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBox  Margin="5,15,5,5" Name="txtEmail"/>
+                    <Button Grid.Column="1" Margin="5"  Click="ButtonBase_OnClickCheck">Check</Button>
+                </Grid>
             </Grid>
             <Grid>
                 <TextBlock Margin="5,0,5,0">Password</TextBlock>

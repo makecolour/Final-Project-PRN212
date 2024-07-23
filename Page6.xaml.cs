@@ -1,4 +1,4 @@
-﻿using Question2.Models;
+﻿using Question2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Main_Project;
+using Main_Project.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Question2
@@ -23,8 +24,8 @@ namespace Question2
     /// </summary>
     public partial class Page6 : Page
     {
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
-        private BookingReservation bookingReservation;
+
+        private readonly BookingReservation bookingReservation;
         private Input input = new Input();
         public Page6(BookingReservation bookingReservation)
         {
@@ -35,9 +36,9 @@ namespace Question2
         private void Load()
         {
             ContentControl.Content = "Reservation ID: " + bookingReservation.BookingReservationId;
-            var list = context.BookingDetails.Where(x => x.BookingReservationId == bookingReservation.BookingReservationId).Include(x => x.Room).ToList();
+            var list = MainWindow.INSTANCE.context.BookingDetails.Where(x => x.BookingReservationId == bookingReservation.BookingReservationId).Include(x => x.Room).ToList();
             BookingDetails.ItemsSource = list;
-            txtId.ItemsSource = context.RoomInformations.ToList();
+            txtId.ItemsSource = MainWindow.INSTANCE.context.RoomInformations.ToList();
             txtId.DisplayMemberPath = "RoomNumber";
         }
         private void Rooms_OnPreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -65,28 +66,20 @@ namespace Question2
 
         private void ButtonBase_OnClickAdd(object sender, RoutedEventArgs e)
         {
-            if (txtId.SelectedItem!=null&&!string.IsNullOrWhiteSpace(dpEnd.Text)&& !string.IsNullOrWhiteSpace(dpStart.Text))
+            if (txtId.SelectedItem!=null&&dpStart.SelectedDate!=null&&dpEnd.SelectedDate!=null)
             { 
-                DateOnly startDate = DateOnly.FromDateTime(dpStart.SelectedDate.Value);
-                DateOnly endDate = DateOnly.FromDateTime(dpEnd.SelectedDate.Value);
-                if(!input.isDateValid(startDate, endDate))
-                {
-                    MessageBox.Show("Start date must be less than end date", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-                else if(input.isDateAfterToday(startDate))
-                {
-                    MessageBox.Show("End date must be less than today", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-                else if(input.isDateOverlap(startDate,endDate))
-                {
-                    MessageBox.Show("Cannot book this date", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-
+                
+                DateOnly startDate = DateOnly.FromDateTime(dpStart.SelectedDate.GetValueOrDefault());
+                DateOnly endDate = DateOnly.FromDateTime(dpEnd.SelectedDate.GetValueOrDefault());
                 var room = txtId.SelectedItem as RoomInformation;
-                var booking = context.BookingDetails.FirstOrDefault(x => x.Room==room&&x.BookingReservationId==bookingReservation.BookingReservationId);
+                if (!input.isDateValid(startDate, endDate))
+                {
+                    return;
+                }
+                else if(!input.isDateAfterToday(startDate))
+                {
+                    return;
+                }
 
                 DateTime startDateTime = startDate.ToDateTime(new TimeOnly(0, 0));
                 DateTime endDateTime = endDate.ToDateTime(new TimeOnly(0, 0));
@@ -96,37 +89,23 @@ namespace Question2
 
                 // Calculate the actualPrice using the totalDays and room.RoomPricePerDay
                 decimal? actualPrice = totalDays * room.RoomPricePerDay;
-                if (booking == null)
+                var bookingDetail = new BookingDetail()
                 {
-                    var bookingDetail = new BookingDetail()
-                    {
-                        StartDate = startDate,
-                        Room = room,
-                        EndDate = endDate,
-                        ActualPrice = actualPrice.GetValueOrDefault(),
-                        BookingReservationId = bookingReservation.BookingReservationId,
-                        BookingReservation = bookingReservation
-                    };
-                    txtPrice.Text = actualPrice.ToString();
-                    context.BookingDetails.Add(bookingDetail);
-                    context.SaveChanges();
-                    Load();
-                }
-                else
+                    StartDate = startDate,
+                    Room = room,
+                    EndDate = endDate,
+                    ActualPrice = actualPrice.GetValueOrDefault(),
+                    BookingReservationId = bookingReservation.BookingReservationId,
+                    BookingReservation = bookingReservation
+                };
+                if (input.isDateOverlap(bookingDetail))
                 {
-                    var result = MessageBox.Show("Do you want to update this booking?", "Update Booking", MessageBoxButton.YesNo);
-                    if (result == MessageBoxResult.Yes)
-                    {
-                        booking.Room = room;
-                        booking.StartDate = startDate;
-                        booking.EndDate = endDate;
-                        booking.ActualPrice = actualPrice.GetValueOrDefault();
-                        txtPrice.Text = actualPrice.ToString();
-                        context.Update(booking);
-                        context.SaveChanges();
-                        Load();
-                    }
+                    return;
                 }
+                txtPrice.Text = actualPrice.ToString();
+                MainWindow.INSTANCE.context.BookingDetails.Add(bookingDetail);
+                MainWindow.INSTANCE.context.SaveChanges();
+                Load();
 
             }
             else
@@ -140,14 +119,14 @@ namespace Question2
             if (txtId.SelectedItem != null)
             {
                 var room = txtId.SelectedItem as RoomInformation;
-                var booking = context.BookingDetails.FirstOrDefault(x => x.Room == room && x.BookingReservationId == bookingReservation.BookingReservationId);
+                var booking = MainWindow.INSTANCE.context.BookingDetails.FirstOrDefault(x => x.Room == room && x.BookingReservationId == bookingReservation.BookingReservationId);
                 if (booking != null)
                 {
                     var result = MessageBox.Show("Do you want to delete this booking?", "Delete Booking", MessageBoxButton.YesNo);
                     if (result == MessageBoxResult.Yes)
                     {
-                        context.BookingDetails.Remove(booking);
-                        context.SaveChanges();
+                        MainWindow.INSTANCE.context.BookingDetails.Remove(booking);
+                        MainWindow.INSTANCE.context.SaveChanges();
                         Load();
                     }
                 }

@@ -1,4 +1,4 @@
-﻿using Question2.Models;
+﻿using Question2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Main_Project.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Question2
@@ -22,7 +23,6 @@ namespace Question2
     /// </summary>
     public partial class Page10 : Page
     {
-        private FuminiHotelManagementContext context = FuminiHotelManagementContext.INSTANCE;
         private BookingReservation bookingReservation;
         public Page10(BookingReservation bookingReservation)
         {
@@ -33,7 +33,7 @@ namespace Question2
         private void Load()
         {
             ContentControl.Content = "Reservation ID: " + bookingReservation.BookingReservationId;
-            var list = context.BookingDetails.Where(x => x.BookingReservationId == bookingReservation.BookingReservationId).Include(x => x.Room).ToList();
+            var list = MainWindow.INSTANCE.context.BookingDetails.Where(x => x.BookingReservationId == bookingReservation.BookingReservationId).Include(x => x.Room).ToList();
             BookingDetails.ItemsSource = list;
         }
     }

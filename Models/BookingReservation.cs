@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Question2.Models;
+namespace Main_Project.Models;
 
 public partial class BookingReservation
 {

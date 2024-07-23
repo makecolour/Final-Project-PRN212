@@ -22,6 +22,15 @@
     <Compile Update="Page13.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Page14.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page15.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page16.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Page2.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +55,9 @@
     <Compile Update="Page9.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Popup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -64,6 +76,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page13.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page14.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page15.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page16.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page2.xaml">
@@ -88,6 +109,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page9.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Popup.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
